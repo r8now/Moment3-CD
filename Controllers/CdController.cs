@@ -49,7 +49,7 @@ namespace Moment3_CD.Controllers
         // GET: Cd/Create
         public IActionResult Create()
         {
-            ViewData["ArtistId"] = new SelectList(_context.Artist, "ArtistId", "ArtistId");
+            ViewData["ArtistId"] = new SelectList(_context.Artist, "ArtistId", "Name");
             return View();
         }
 
